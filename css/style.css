@@ -1,0 +1,431 @@
+/* CSS stylings */
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 150%;
+    padding: 0em 2em 0em;
+}
+
+.skip {
+    position: absolute;
+    left: -1000px;
+}
+
+.skip:focus {
+    left: 0px;
+}
+
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: lowercase;
+  color: black;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.navigation a:hover {
+  background: white;
+  color: #A30000;
+}
+
+a:visited {
+    color: black;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.navigation .active {
+    text-transform: uppercase;
+    color: #A30000;
+    text-decoration: wavy;
+}
+
+/* .navigation ul {
+    font-family: 14px Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 0px 10px;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0px 10px;
+    vertical-align: top;
+}
+
+.navigation li:first-child {
+    margin-left: 0;
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: black;
+    size: 20px;
+
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+} */
+
+.hero_header {
+    font-size: 72px;
+    line-height: 55%;
+    font-family: Figtree, Arial, sans-serif;
+    margin-top: 25px;
+}
+
+h1 {
+    font-family: Figtree, sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-family: Figtree, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.lit_grid div > h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+p {
+    padding-bottom: 5px;
+    font-family: Helvetica, sans-serif;
+}
+
+img:hover {
+    box-shadow: 0px 8px 16px 0px rgba(6, 82, 73, 0.2);
+}
+
+.hero_img {
+    width: 100%;
+}
+
+.index_div {
+    padding: 0em 3em 0em;
+}
+
+ul {
+    list-style-image: url("../images/book.png");
+    line-height: 250%;
+    padding-left: 3em;
+}
+
+dt {
+    font-family: Figtree, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+dd {
+    font-style: oblique;
+    padding-top: 10px;
+}
+
+dd p {
+    font-style: normal;
+}
+
+footer {
+    padding: 10px 0px;
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    padding: 10px 0px;
+    background-color: black;
+    color: red;
+}
+
+footer a:visited {
+    color: red;
+}
+
+.index_grid a {
+    text-decoration: none;
+    margin-bottom: -1em;
+}
+
+.index_grid a:last-child {
+    text-decoration: none;
+    margin-bottom: 2em;
+}
+
+.index_grid a:hover {
+    box-shadow: 0px 8px 16px 0px rgba(6, 82, 73, 0.2);
+}
+
+/* .grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.grid div {
+    border-radius: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2), 0px -8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.grid div:hover {
+    box-shadow: 0px 8px 16px 0px rgba(6, 82, 73, 0.2), 0px -8px 16px 0 rgba(6, 82, 73, 0.2);
+}
+
+.grid img {
+    padding: 10px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.grid p {
+    padding: 0px 15px 10px;
+} */
+
+.lit_grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.lit_grid div {
+    border-radius: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2), 0px -8px 16px 0 rgba(0,0,0,0.2);
+    padding: 0px 15px 10px;
+}
+
+.lit_grid div:hover {
+    box-shadow: 0px 8px 16px 0px rgba(6, 82, 73, 0.2), 0px -8px 16px 0 rgba(6, 82, 73, 0.2);
+}
+
+.lit_grid img {
+    padding: 10px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lit_grid h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.lit_grid p {
+    padding: 0px 15px 10px;
+    text-align: justify;
+}
+
+.index_grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.index_grid div {
+    border-radius: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2), 0px -8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.index_grid div:first-child {
+    margin-top: 1em;
+}
+
+.index_grid h2 {
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: .25em;
+    text-align: center;
+    padding-top: .5em;
+}
+
+.index_grid p {
+    padding: 0em 1.5em 1em;
+}
+
+.hist_grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.hist_grid div {
+    border-radius: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2), 0px -8px 16px 0 rgba(0,0,0,0.2);
+    padding: 0px 15px 10px;
+}
+
+.hist_grid div:hover {
+    box-shadow: 0px 8px 16px 0px rgba(6, 82, 73, 0.2), 0px -8px 16px 0 rgba(6, 82, 73, 0.2);
+}
+
+.hist_grid img {
+    padding: 10px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hist_grid h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hist_grid p {
+    padding: 0px 15px 10px;
+    text-align: justify;
+}
+
+.dict_grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.dict_grid div {
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2), 0px -8px 16px 0 rgba(0,0,0,0.2);
+    padding: 0px 15px 10px;
+    margin-bottom: 10px;
+    background-image: url("../images/parchment.png");
+}
+
+/*Note: I might do different things with the grids later, which is why i've separated the grids into classes per page instead of using the same class for all grids*/
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(2deg); }
+   95% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+  display: inline-block;
+  animation: wiggle 1.5s infinite;
+}
+
+.wiggle:hover {
+  animation: none;
+}
+
+/* .wiggle:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  } */
+  
+@keyframes shake {
+10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+}
+
+20%, 80% {
+    transform: translate3d(2px, 0, 0);
+}
+
+30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+}
+
+40%, 60% {
+    transform: translate3d(4px, 0, 0);
+}
+}
+
+  @media screen and (prefers-reduced-motion: reduce){
+    .wiggle {
+      animation: none;
+    }
+  }
+
+
+div > dd > p {
+    background-image: linear-gradient(to right, #faec2700, #faec2781);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    text-decoration: none;
+    transition: background-position 0.5s ease-out;
+  }
+  div > dd > p:hover {
+    background-position: -99.99% 0;
+  }
+
+.dict_grid {
+    margin-top: 1em;
+}
+
+.dict_info {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
